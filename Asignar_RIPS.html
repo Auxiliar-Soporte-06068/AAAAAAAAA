@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Asignar_RIPS.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Be+Vietnam+Pro:wght@500;700&family=Roboto&family=Roboto+Condensed:wght@500&display=swap"  el="stylesheet">
+
+    <!-- SWEETALERT2 -->
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+
+    <!-- BOOTSTRAP -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <title>Registrar - RIPS</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="listaHC">
+
+            <div class="HC">
+                <span>Seleccione la HC a asignarle el RIPS</span>
+                <select name="" id="listaHC" class="form-select">
+                    <option value="Sin Seleccionar">Sin Seleccionar</option>
+                </select>
+            </div>
+
+            <div class="tipoRIPS">
+                <span>Tipo de rips a diligenciar</span>
+                <label for="ac">AC <input type="radio" name="tipoRips" id="AC"></label>
+                <label for="ap">AP <input type="radio" name="tipoRips" id="AP"></label>
+                
+            </div>
+
+        </div>
+
+        <div class="listaDeRIPS">
+
+            <div class="modalidadGrupoServicioTecSal divRIPS">
+                <span>Seleccione tipo de Usuario</span>
+                <select name="" id="listaTipoUsuario" class="form-select">
+                    <option value="Sin Seleccionar">Sin Seleccionar</option>
+                </select>
+            </div>
+
+            <div class="modalidadGrupoServicioTecSal divRIPS">
+                <span>Entidad</span>
+                <select name="" id="listaEntidad" class="form-select">
+                    <option value="Sin Seleccionar">Sin Seleccionar</option>
+                </select>
+            </div>
+
+
+            <div class="modalidadGrupoServicioTecSal divRIPS">
+                <span>modalidadGrupoServicioTecSal</span>
+                <select name="" id="listamodalidadAtencion" class="form-select">
+                    <option value="Sin Seleccionar">Sin Seleccionar</option>
+                </select>
+            </div>
+
+            <div class="grupoServicios divRIPS">
+                <span>grupoServicios</span>
+                <select name="" id="listaGrupoServicios" class="form-select">
+                    <option value="Sin Seleccionar">Sin Seleccionar</option>
+                </select>
+            </div>
+
+            <div class="codServicio divRIPS">
+                <span>codServicio</span>
+                <select name="" id="listaServicios" class="form-select">
+                    <option value="Sin Seleccionar">Sin Seleccionar</option>
+                </select>
+            </div>
+
+            <div class="finalidadTecnologiaSalud divRIPS">
+                <span>finalidadTecnologiaSalud</span>
+                <select name="" id="listaFinalidad" class="form-select">
+                    <option value="Sin Seleccionar">Sin Seleccionar</option>
+                </select>
+            </div>
+
+            <div class="causaMotivoAtencion divRIPS">
+                <span id="causaViaIngreso">causaMotivoAtencion</span>
+                <select name="" id="listaCausa" class="form-select">
+                    <option value="Sin Seleccionar">Sin Seleccionar</option>
+                </select>
+
+                <select name="" id="listaViaIngreso" style="display: none;" class="form-select">
+                    <option value="Sin Seleccionar">Sin Seleccionar</option>
+                </select>
+            </div>
+
+            <div class="tipoDiagnosticoPrincipal divRIPS">
+                <span>tipoDiagnosticoPrincipal</span>
+                <select name="" id="listaTipoDiagnostico" class="form-select">
+                    <option value="Sin Seleccionar">Sin Seleccionar</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div class="cieCups">
+            <div class="codConsulta">
+                <div class="input-wrapper">
+                    <span id="procedimientoRIPS">codConsulta</span>
+                    <input type="text" id="inputCodConsulta" value="89020" class="form-control inputCodigos">
+                </div>
+                <div class="select-wrapper">
+                    <select name="" id="listaCodConsulta" class="form-select">
+                            <option value="Sin Seleccionar">Sin Seleccionar</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="codDiagnosticoPrincipal">
+                <div class="input-wrapper">
+                    <span>codDiagnosticoPrincipal</span>
+                    <input type="text" id="inputDiagPrincipal" class="form-control inputCodigos">
+                </div>
+                <div class="select-wrapper">
+                    <select name="" id="listaDiagPrincipal" class="listaDiagPrincipal form-select">
+                        <option value="Sin Seleccionar">Sin Seleccionar</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="codDiagnosticoRelacionado1">
+                <div class="input-wrapper">
+                    <span id="codDiagnosticoRelacionado">codDiagnosticoRelacionado1</span>
+                    <input type="text" id="inputDiagPrincipal1" class="form-control inputCodigos">
+                </div>
+                <div class="select-wrapper">
+                    <select name="" id="listaDiagPrincipal1" class="listaDiagPrincipal form-select">
+                        <option value="Sin Seleccionar">Sin Seleccionar</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="codDiagnosticoRelacionado2">
+                <div class="input-wrapper">
+                    <span id="codDiagnosticoRelacionado2">codDiagnosticoRelacionado2</span>
+                    <input type="text" id="inputDiagPrincipal2" class="form-control inputCodigos">
+                </div>
+
+                <div class="select-wrapper">
+                    <select name="" id="listaDiagPrincipal2" class="listaDiagPrincipal form-select">
+                        <option value="Sin Seleccionar">Sin Seleccionar</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="codDiagnosticoRelacionado3" style="display: none;">
+
+                <div class="input-wrapper">
+                    <span>codDiagnosticoRelacionado3</span>
+                    <input type="text" id="inputDiagPrincipal3" class="form-control inputCodigos">
+                </div>
+
+                <div class="select-wrapper">
+                    <select name="" id="listaDiagPrincipal3" class="listaDiagPrincipal form-select">
+                        <option value="Sin Seleccionar">Sin Seleccionar</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="button">
+            <button id="btnRegistrarRIPS" class="btn btn-success">Registrar RIPS</button>
+        </div>
+    </div>
+
+</body>
+
+<!-- SWEETALERT -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+
+<!-- BOOTSTRAP -->
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<script src="Asignar_RIPS.js"></script>
+</html>
